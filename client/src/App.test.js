@@ -22,6 +22,8 @@ test('check for text of button on navbar', () =>{
   getByText(/theme/i)
 })
 
+
+
 test('check for text of h1 element', () =>{
   const { getByText } = render(<Navbar />);
   getByText(/Players/i)
