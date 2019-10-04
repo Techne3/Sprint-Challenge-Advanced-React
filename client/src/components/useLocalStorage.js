@@ -6,11 +6,11 @@ import {useState} from 'react';
 
 export const useLocalStorage = (key, initialValue) => {
 
-    // if (typeof key !== 'string') {
-    //     throw new Error(
-    //       'Invalid Params: useLocalStorage should receive a string for the first argument'
-    //     );
-    //   }
+    if (typeof key !== 'string') {
+        throw new Error(
+          'Invalid Params: useLocalStorage should receive a string for the first argument'
+        );
+      }
     
       const [storedValue, setStoredValue] = useState(() => {
         if (localStorage.getItem(key)) {

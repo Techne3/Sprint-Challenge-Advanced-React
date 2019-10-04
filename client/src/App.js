@@ -4,6 +4,10 @@ import './App.css';
 import axios from 'axios'
 import PlayerData from './components/PlayerData'
 import NavBar from './components/NavBar'
+
+export const getByTest =()=>{
+
+}
 class App extends React.Component {
 
   constructor() {
@@ -31,6 +35,7 @@ class App extends React.Component {
   return (
     <div className="App">
       <NavBar />
+      <h1>Soccer Players</h1>
       <PlayerData player={this.state.player} />
     </div>
    );

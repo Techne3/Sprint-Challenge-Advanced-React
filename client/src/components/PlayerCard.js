@@ -1,5 +1,4 @@
 import React from 'react'
-import { Card, CardBody, CardTitle, CardText, } from 'reactstrap';
 
 
 function PlayerCard (props) {
@@ -10,7 +9,7 @@ function PlayerCard (props) {
 
     <div className="outerWrap">
          <div className="cardWrap">
-            <h1>{props.players.name}</h1>
+            <h1>Name: {props.players.name}</h1>
             <p>{props.players.country}</p>
             <p>{props.players.searches}</p>
         </div> 

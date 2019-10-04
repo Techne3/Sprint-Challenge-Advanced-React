@@ -1,6 +1,8 @@
 import React from 'react';
 import PlayerCard from './PlayerCard'
 
+
+
 class PlayerData extends React.Component {
 
     
