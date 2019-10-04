@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import axios from 'axios'
 import PlayerData from './components/PlayerData'
+import NavBar from './components/NavBar'
 class App extends React.Component {
 
   constructor() {
@@ -29,7 +30,7 @@ class App extends React.Component {
   render () {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <NavBar />
       <PlayerData player={this.state.player} />
     </div>
    );

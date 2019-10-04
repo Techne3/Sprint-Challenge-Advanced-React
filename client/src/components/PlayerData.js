@@ -5,12 +5,12 @@ class PlayerData extends React.Component {
 
     
     render(props){
-        console.log(this.props.player)
+        // console.log(this.props.player)
         
         return(
-            <div>
+            <div className="outerWrap">
             {this.props.player.map(players => 
-                <div>
+                <div >
                     <PlayerCard players={players} />
                 </div>
             )}
